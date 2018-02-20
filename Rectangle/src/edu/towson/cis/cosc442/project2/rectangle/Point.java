@@ -11,11 +11,11 @@ public class Point {
 	/**
 	 * Instantiates a new point.
 	 *
-	 * @param x the x
-	 * @param y the y
+	 * @param xValue the x
+	 * @param yValue the y
 	 */
-	Point(Double x, Double y) {
-		this.x = y;
-		this.y = y;
+	Point(Double xValue, Double yValue) {
+		this.x = xValue;
+		this.y = yValue;
 	}
 }

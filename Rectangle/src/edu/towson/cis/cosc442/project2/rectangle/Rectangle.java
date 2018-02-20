@@ -26,15 +26,22 @@ public class Rectangle {
 	 * @return the area
 	 */
 	public Double getArea() {
-		return Math.abs((p2.x - p1.x) * (p2.y - p1.y));
+		return Math.abs(xDiff() * yDiff());
 	}
 	
+	private Double xDiff() {
+		return (p2.x - p1.x);
+	}
+	
+	private Double yDiff() {
+		return (p2.y - p1.y);
+	}
 	/**
 	 * Gets the diagonal.
 	 *
 	 * @return the diagonal
 	 */
 	public Double getDiagonal() {
-		return Math.sqrt(Math.pow((p2.x - p1.x), 2) + Math.pow((p2.y - p1.y), 2));
+		return Math.sqrt(Math.pow(xDiff(), 2) + Math.pow(yDiff(), 2));
 	}
 }
