@@ -32,7 +32,7 @@ public class VendingMachineItemTest {
 	 */
 	@After
 	public void tearDown() throws Exception {
-		item = new VendingMachineItem(null, 0.0);
+		item = null;
 	}
 
 	/**
